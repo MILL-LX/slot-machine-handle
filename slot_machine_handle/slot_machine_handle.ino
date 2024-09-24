@@ -95,7 +95,7 @@ void loop() {
                 FastLED.show();
 
                 // HTTP request logic
-                const char* host = "http://10.10.10.72/animate/ApeFestSlotMachine";
+                const char* host = "http://pi-matrix.local/animate/ApeFestSlotMachine";
                 const uint16_t port = 80;
                 Serial.print("Connecting to: ");
                 Serial.println(host);
