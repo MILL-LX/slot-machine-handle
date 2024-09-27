@@ -101,6 +101,9 @@ void loop() {
                 Serial.println(host);
 
                 HTTPClient http;
+                // Set a timeout of 300000 milliseconds (5 minutes)
++               http.setTimeout(300000);
+                
                 http.begin(host);
 
                 int httpCode = http.GET();
